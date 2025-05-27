@@ -4,7 +4,7 @@
 - Name: Token42
 - Symbol: Tk42
 - Initial supply: 42000000
-- Contract address: 
+- Contract address: 0x8b1B189190E4Bac00efB5e31134361E3c31122A4
 
 ## Features
 - Authority: The contract creator(0xE8ee070E416f92A5b0f37438D33A97D246F72C0E)
