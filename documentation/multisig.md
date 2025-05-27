@@ -1,6 +1,6 @@
 ## Multisig
 
-To approve transfers with the multisig contract, you need to use environment variables:
+To approve transfers with the multisig contract, you need to use environment variables
 
 # Approve
 modify the environment variables and run: npx hardhat run scripts/approve-transfer.ts --network bsctest

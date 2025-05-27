@@ -12,3 +12,4 @@
 - Multisig: For transfers from 100k tokens/tx, a multisig 2/3 is required
 
 
+Classic ERC20 token, transferable, with a built-in multisig for transfers over 100k tokens. You need an ERC20 wallet to interact with.
