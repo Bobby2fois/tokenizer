@@ -11,4 +11,4 @@
 - Transfer: The token is transferable by anyone up to 100k tokens/tx
 - Multisig: For transfers from 100k tokens/tx, a multisig 2/3 is required
 
-
+Classic ERC20 token, with a built-in multisig for transfers over 100k tokens. You must have a ERC20 wallet to use.

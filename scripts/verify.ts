@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 async function main() {
-  const tokenAddress = "0x8b1B189190E4Bac00efB5e31134361E3c31122A4"; // Replace with your actual token address
+  const tokenAddress = "0x8b1B189190E4Bac00efB5e31134361E3c31122A4";
   const tokenName = "TokenTest42";
   const tokenSymbol = "TK42";
   const initialSupply = 42000000;
@@ -37,8 +37,6 @@ async function main() {
     
     console.log("TestToken verification successful!");
     
-    // Now let's verify the MultiSig contract
-    // First, we need to get the MultiSig address from the TestToken contract
     const token = await ethers.getContractAt("TestToken", tokenAddress);
     const multisigAddress = await token.multisig();
     

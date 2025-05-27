@@ -5,7 +5,7 @@ dotenv.config();
 
 // This script allows any of the three multisig owners to approve a transaction
 async function main() {
-  // Use environment variables instead of command line arguments
+
   const multisigAddress = process.env.MULTISIG_ADDRESS;
   const senderAddress = process.env.SENDER_ADDRESS;
   const recipientAddress = process.env.RECIPIENT_ADDRESS;
@@ -29,7 +29,7 @@ async function main() {
   // Get the correct owner based on owner_number
   let privateKey: string;
   if (ownerNumber === "1") {
-    const key = process.env.PRIVATE_KEY; // Use the main deployer key for owner 1
+    const key = process.env.PRIVATE_KEY;
     if (!key) {
       console.error("Please add PRIVATE_KEY to your .env file");
       return;
@@ -37,7 +37,7 @@ async function main() {
     privateKey = key;
     console.log("Using OWNER1_ADDRESS as signer");
   } else if (ownerNumber === "2") {
-    // You'll need to add PRIVATE_KEY2 to your .env file
+
     const key = process.env.PRIVATE_KEY2;
     if (!key) {
       console.error("Please add PRIVATE_KEY2 to your .env file");
@@ -46,7 +46,7 @@ async function main() {
     privateKey = key;
     console.log("Using OWNER2_ADDRESS as signer");
   } else if (ownerNumber === "3") {
-    // You'll need to add PRIVATE_KEY3 to your .env file
+
     const key = process.env.PRIVATE_KEY3;
     if (!key) {
       console.error("Please add PRIVATE_KEY3 to your .env file");
