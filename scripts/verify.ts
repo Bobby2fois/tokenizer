@@ -37,6 +37,8 @@ async function main() {
     
     console.log("TestToken verification successful!");
     
+    // Now let's verify the MultiSig contract
+    // First, we need to get the MultiSig address from the TestToken contract
     const token = await ethers.getContractAt("TestToken", tokenAddress);
     const multisigAddress = await token.multisig();
     
